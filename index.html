@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+a{
+  text-decoration: none;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+    .header {
+  position: absolute;
+  top: 0px;
+  width: 100dvw;
+  left: 0;
+  z-index: 999;
+  padding: 15px 0;
+}
+
+  .header-row{
+    display: flex;
+    align-items: center;
+  }
+
+  .header-btns{
+    margin-left: auto;
+  }
+
+  .header-logo {
+    max-width: 120px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .header-nav {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+    .header-nav-item {
+      color: #fff;
+}
+.mainBlock {
+	 overflow: hidden;
+	 position: relative;
+	 width: 100dvw;
+	 height: 100dvh;
+	 min-height: 550px;
+}
+ .mainBlock-image {
+	 width: 500px;
+	 aspect-ratio: 1.7777777778;
+	 border-radius: 12px;
+	 display: block;
+}
+ .mainBlock .container {
+	 display: flex;
+	 align-items: center;
+	 height: 100%;
+}
+ .mainBlock-info {
+	 position: relative;
+	 z-index: 14;
+}
+ .mainBlock-info p {
+	 max-width: 700px;
+}
+.imageFon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+</style>
+<body>
+    <div>
+        <a href="`/${locale || 'en'}/app/courses/view/1/1?trial=true`" class="btn mainBtn">
+            Free Lesson
+        </a>
+            
+          <div class="mainBlock">
+      
+            <div class="container">
+              <div class="mainBlock-info">
+                <div class="subtitle">Online course</div>
+      <!--          <h1>{{ $t('landing.title') }}</h1>-->
+                <div class="boldText mb-1">Creative images and videos</div>
+                <p class="mainBlock-txt">Master free AI tools for text, image, and video generation – easily, quickly, and without cost</p>
+            </div>
+            </div>
+            <div>
+                <img src="/images/test.jpg" class="imageFon mainImage" alt="">
+            </div>
+      
+            <div class="mainShadow"></div>
+            <div class="gradient-bottom"></div>
+          </div>
+    </div>
+</body>
+</html>
